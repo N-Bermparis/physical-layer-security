@@ -1,3 +1,20 @@
+% ========================================================================
+% File        : snr_analysis.m
+% Project     : physical-layer-security
+% Description : Computes PER for Bob/Eve over AWGN channels to evaluate secrecy thresholds.
+%
+% Author      : Nikolaos Bermparis
+% Institution : University of the Aegean (ICSD)
+% Course      : Physical Layer Security
+% Year        : 2025
+%
+% Notes:
+%   - Finds SNR such that PER_Eve > 0.98.
+%   - Full pipeline: QAM → AWGN → demod → Hamming → CRC → PER.
+%
+% ========================================================================
+
+
 function snr_analysis
     % Initial parameters
     M = 64; % Number of symbols in 64-QAM
@@ -167,3 +184,4 @@ function snr_analysis
         end
     end
 end
+
