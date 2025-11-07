@@ -1,3 +1,21 @@
+% ========================================================================
+% File        : awgn_channel.m
+% Project     : physical-layer-security
+% Description : <1–2 line description of what the file does>
+%
+% Author      : Nikolaos Bermparis
+% Institution : University of the Aegean (ICSD) 
+% Course      : Physical Layer Security
+% Year        : 2025
+%
+% Notes:
+%   - Part of a full communication pipeline including CRC-24, Hamming(12,8),
+%     64-QAM modulation, AWGN/MIMO channels, and secrecy analysis.
+%   - See repository README for full system architecture.
+%
+% ========================================================================
+
+
 function y = awgn_channel(x, SNR_dB)
     % awgn_channel Προσθέτει θόρυβο AWGN στο σήμα x με δοθέν SNR σε dB
     %   y = awgn_channel(x, SNR_dB) επιστρέφει το σήμα y που είναι το σήμα x
@@ -17,3 +35,4 @@ function y = awgn_channel(x, SNR_dB)
     % Έξοδος του καναλιού y
     y = x + w;
 end
+
