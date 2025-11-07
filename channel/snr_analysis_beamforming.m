@@ -1,3 +1,20 @@
+% ========================================================================
+% File        : snr_analysis_beamforming.m
+% Project     : physical-layer-security
+% Description : Evaluates secrecy performance using eigenvector-based MIMO beamforming.
+%
+% Author      : Nikolaos Bermparis
+% Institution : University of the Aegean (ICSD)
+% Course      : Physical Layer Security
+% Year        : 2025
+%
+% Notes:
+%   - Beamforming applied: w = dominant eigenvector of H'H.
+%   - Compares Bob and Eve PER under MIMO channels.
+%
+% ========================================================================
+
+
 function snr_analysis_beamforming
     % Initial parameters
     M = 64; % Number of symbols in 64-QAM
@@ -166,3 +183,4 @@ function snr_analysis_beamforming
         end
     end
 end
+
