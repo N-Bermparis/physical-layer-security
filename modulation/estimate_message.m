@@ -1,3 +1,19 @@
+% ========================================================================
+% File        : estimate_message.m
+% Project     : physical-layer-security
+% Description : Maps demodulated QAM symbols back to superposition-coded messages.
+%
+% Author      : Nikolaos Bermparis
+% Institution : University of the Aegean (ICSD)
+% Course      : Physical Layer Security
+% Year        : 2025
+%
+% Notes:
+%   - Implements shape-based region decoding for hierarchical QAM.
+%
+% ========================================================================
+
+
 function message = estimate_message(demodulated, M)
     % Δημιουργία του αστερισμού για το 64-QAM
     constellation = qammod(0:M-1, M);
