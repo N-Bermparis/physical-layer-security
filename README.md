@@ -1,5 +1,11 @@
 
 
+
+![MATLAB](https://img.shields.io/badge/MATLAB-R2024a-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Type-Research_Project-red)
+
+
 ```
 physical-layer-security/
 │
